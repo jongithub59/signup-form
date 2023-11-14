@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.picture {
+    background-image: url(toast.avif);
+    background-position: center;
+    width: 45vw;
+    height: 100vh;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.form-section {
+    padding: 10px;
+}
+
+fieldset {
+    border: none;
+}
