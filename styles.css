@@ -1,6 +1,10 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(12, 12, 12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(204, 204, 204);
+
 }
 
 .content {
@@ -10,23 +14,68 @@
 }
 
 .picture {
-    background-image: url(toast.avif);
+    background-image: url(lights.jpg);
     background-position: center;
-    width: 45vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
     height: 100vh;
+    box-shadow: 0px 0px 3px 2px rgba(27, 27, 27, 0.71);
 }
 
 .right {
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 20px;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.form-header {
+    width: 45vw;
 }
 
 .form-section {
     padding: 10px;
+    width: 45vw;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(153, 153, 153);
+}
+
+#name-labels {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-labels {
+    display: flex;
+    flex-direction: row;
+}
+
+#pass-labels {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    
+    background-color: aliceblue;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-right: 20px;
 }
 
 fieldset {
     border: none;
+    justify-content: space-between;
 }
