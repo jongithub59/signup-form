@@ -3,6 +3,11 @@
     src: url('Nordic\ Alternative\ Regular.ttf');
 }
 
+:root {
+    --green: rgb(99, 212, 23);
+    --background-color: rgb(27, 27, 27);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -26,7 +31,7 @@
     background-size: cover;
     width: 40vw;
     height: 100vh;
-    box-shadow: 0px 0px 3px 2px rgba(27, 27, 27, 0.71);
+    box-shadow: 0px 0px 3px 2px rgb(27, 27, 27,);
 }
 
 .logo {
@@ -68,6 +73,10 @@ img {
     width: 45vw;
 }
 
+.form-section > h1 {
+    margin-left: 10px;
+}
+
 label, input {
     display: flex;
     flex-direction: column;
@@ -95,7 +104,6 @@ label {
 }
 
 input {
-    
     background-color: aliceblue;
     border: 1px solid grey;
     padding: 5px;
@@ -107,6 +115,37 @@ fieldset {
     justify-content: space-between;
 }
 
+.submit {
+    display: flex;
+    align-items: end;
+    border-top: 2px solid var(--green);
+    margin: 20px 0;
+    padding-top: 20px;
+}
+
 button {
-    background-color: rgb(12, 12, 12, 0.8);
+    margin: 10px 10px 0;
+    background-color: var(--background-color);
+    padding: 20px;
+    font-size: large;
+    color: var(--green);
+    box-shadow: 0px 0px 3px 2px rgb(27, 27, 27);
+    border: 1px solid var(--green);
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: var(--green);
+    color: var(--background-color);
+}
+
+a {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
