@@ -11,7 +11,7 @@ function validatePassword() {
     let password1 = password.value
     let password2 = passwordConfirm.value
     //checks that both password fields are not empty
-    if (password1 != "" && password2 !="") {
+    if (password1 != "" && password2 != "") {
         if (password1 != password2) { //checks that passwords match
             passwordError.textContent = '*Passwords do not match'
             passwordConfirm.classList.add('invalid')
