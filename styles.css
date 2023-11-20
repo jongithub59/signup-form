@@ -27,7 +27,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(20, 20, 20);
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .picture {
@@ -48,7 +47,6 @@ body {
     background-color: rgb(12, 12, 12, 0.8);
     margin-top: 20vh;
     font-size: 35px;
-    font-family: nordic;
 }
 
 .logo > p {
@@ -63,7 +61,6 @@ img {
 
 .right {
     display: flex;
-    /* flex-direction: column; */
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
@@ -72,6 +69,11 @@ img {
 
 .form-header {
     width: 45vw;
+    margin-top: 10vh;
+}
+
+.form-header > h1 {
+    font-size: 25px;
 }
 
 .form-section {
@@ -81,6 +83,7 @@ img {
 
 .form-section > h1 {
     margin-left: 10px;
+    font-size: 25px;
 }
 
 label, input {
@@ -136,6 +139,7 @@ input:focus {
 fieldset {
     border: none;
     justify-content: space-between;
+    margin: 10px;
 }
 
 #passwd-error {
@@ -154,13 +158,13 @@ fieldset {
 button {
     margin: 10px 10px 0;
     background-color: var(--background-color);
-    padding: 20px;
+    padding: 15px;
     font-size: large;
     color: var(--green);
     box-shadow: 0px 0px 3px 2px rgb(27, 27, 27);
-    border: 1px solid var(--green);
+    border: 3px solid var(--green);
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 button:hover {
